@@ -1,0 +1,121 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <a class="navbar-brand" href="index.html">Project Explorer</a>
+            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                <form class="form-inline my-2 my-lg-0" name="searchForm">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search Projects" aria-label="Search">
+                    <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+                </form>
+
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="createproject.html">Submit</a>
+                    </li>
+                </ul>
+
+                <ul class="navbar-nav navbar-rigth">
+                    <li class="nav-item">
+                        <a class="nav-link" href="register.html">Sign up<span class="sr-only"></span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login<span class="sr-only"></span></a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="container">
+            <h4 class="d-inline">John Doe </h4>
+            <p class="text-secondary d-inline">johndoe@gmail.com</p>
+            <ul class="row bg-light" style="list-style: none;">
+                <li class="col-4">Program<br>Computer Science</li>
+                <li class="col-4">Matriculation number<br>00/0000</li>
+                <li class="col-4">Graduation Year<br>2019</li>
+            </ul>
+        </section>
+
+        <section class="container">
+            <h4>Update Profile</h4><hr>
+            <form action="" name="updateProfile" class="form-row">
+                <div class="form-group col-6">
+                    <label for="firstName" class="form-label">First Name: </label>
+                    <input type="text" class="form-control" name="firstName" id="">
+                </div>
+                <div class="form-group col-6">
+                    <label for="lastName" class="form-label">Last Name: </label>
+                    <input type="text" name="lastName" id="" class="form-control">
+                </div>
+                <div class="form-group col-6">
+                    <label for="email" class="form-label">Email Address: </label>
+                    <input type="email" class="form-control" name="email" id="">
+                </div>
+                <div class="form-group col-6">
+                    <label for="matricNumber" class="form-label">Matriculation Number: </label>
+                    <input type="text" class="form-control" name="matricNumber" id="">
+                </div>
+                <div class="form-group col-6">
+                    <label for="program" class="form-label">Program</label>
+                    <select name="program" id="" class="form-control">
+                        <option value="">Choose..</option>
+                        <option value="computer_science">Computer Science</option>
+                        <option value="computer_information_systems">Computer Information Systems</option>
+                        <option value="computer_technology">Computer Technology</option>
+                    </select>
+                </div>
+                <div class="form-group col-6">
+                    <label for="graduationYear" class="form-label">Graduation Year</label>
+                    <select name="graduationYear" id="" class="form-control">
+                        <option value="">Choose..</option>
+                        <option value="2013">2013</option>
+                        <option value="2014">2014</option>
+                        <option value="2015">2015</option>
+                        <option value="2016">2016</option>
+                        <option value="2017">2017</option>
+                        <option value="2018">2018</option>
+                        <option value="2019">2019</option>
+                        <option value="2020">2020</option>
+                    </select>
+                </div>
+                <input type="submit" class="btn btn-primary" value="Update Profile">
+            </form>
+        </section>
+            
+        <section class="container">
+            <h4>Change Password</h4><hr>
+            <form action="" name="changePassword" class="form-row">
+                <div class="form-group col-4">
+                    <label for="currentPassword" class="form-label">Current Password</label>
+                    <input type="password" name="currentPassword" id="" class="form-control" placeholder="Current Password">
+                </div>
+                <div class="form-group col-4">
+                    <label for="newPassword" class="form-label">New Password</label>
+                    <input type="password" name="newPassword" class="form-control" id="" placeholder="Your new password">
+                </div>
+                <div class="form-group col-4">
+                    <label for="confirmPassword" class="form-label">Confirm Password</label>
+                    <input type="password" name="confirmPassword" id="" class="form-control" placeholder="Confirm new password">
+                </div>
+                <input type="submit" class="btn btn-primary" value="Change Password">
+            </form>
+        </section>
+    </main>
+    
+    <footer class="footer mt-auto py-3 float-right">
+        <div class="container">
+          <span class="text-muted">Project Explorer &copy 2021 - Edconnect</span>
+        </div>
+    </footer>
+</body>
+</html>

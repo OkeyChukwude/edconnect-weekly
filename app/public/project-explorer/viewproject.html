@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <a class="navbar-brand" href="index.html">Project Explorer</a>
+            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                <form class="form-inline my-2 my-lg-0" name="searchForm">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search Projects" aria-label="Search">
+                    <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+                </form>
+
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="createproject.html">Submit</a>
+                    </li>
+                </ul>
+
+                <ul class="navbar-nav navbar-rigth">
+                    <li class="nav-item">
+                        <a class="nav-link" href="register.html">Sign up<span class="sr-only"></span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login<span class="sr-only"></span></a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="container">
+            <h4>Project 1</h4>
+            <ul class="row bg-light" style="list-style: none;">
+                <li class="col-3">Created By <br> John Doe</li>
+                <li class="col-3">Date Created <br> 00/00/0000</li>
+                <li class="col-3">Last Updated <br> 00/00/0001</li>
+                <button class=" col-3 btn btn-primary">View Project</button>
+            </ul>
+        </section>
+
+        <div class="row">
+            <section class="col">
+                <h2>Project Abstract</h2><hr>
+                <div>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere molestiae velit eligendi vero non eum corporis voluptas voluptatem ex libero perspiciatis suscipit nesciunt earum tempora quae ad architecto, animi excepturi. Ullam rerum sequi, itaque tenetur harum ex modi exercitationem quibusdam!</p>
+                </div>
+                <div class="form-group">
+                    <label for="comment" class="form-label"><strong>Comments</strong></label>
+                    <textarea name="comment" class="form-control" id=""></textarea>
+                </div>
+                <div>
+                    <input type="submit" class="btn btn-primary">
+                </div>
+                <hr>
+                <p class="text-center">No comments added yet</p>
+            </section>
+    
+            <section class="col">
+                <h2>Project Details</h2><hr>
+                <div class="card text-center mb-3">
+                    <div class="card-header">
+                        <strong>Author(s)</strong>
+                    </div>
+                    <div class="card-body">
+                      <p class="card-text text-left">Ade Chris.</p>
+                    </div>
+                    <div class="card-footer text-muted text-left">
+                      <a href="">#web</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                      <h4>Project files</h4>
+                    </div>
+                    <div class="card-body">
+                      <blockquote class="blockquote mb-0">
+                        <p>No file uploaded yet</p>
+                      </blockquote>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="bg-light">
+        <div class="container bg-light">
+          <p class="float-right">
+            <span class="text-muted">Project Explorer &copy; 2021 - Edconnect</span>
+          </p>
+        </div>
+    </footer>
+</body>
+</html>
